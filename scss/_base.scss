@@ -478,7 +478,9 @@ padding-right: 10px;
 main {
 	display: flex;
 	flex-direction: column;
-		margin-top: 170px;
+		// margin-top: 170px;
+
+div.design {padding-top: 120px;}
 
 }
 main section {
@@ -784,7 +786,9 @@ main {
 	}
 
 
-
+main {
+	margin-top: 0px;
+}
 
 
 	section
@@ -797,6 +801,8 @@ main {
 		display: flex;
 		flex-direction:column-reverse;
 		vertical-align: 50%;
+			margin-top: 0px;
+
 
 
 	}
@@ -931,7 +937,7 @@ display: inline;
 .gallery {
 
 	i {
-		margin-top: 32px;
+		margin-top: 42px;
 			margin-left: 15px;
 		padding-right: 10px;
 		font-size: 42px;
@@ -952,7 +958,7 @@ display: inline;
 
 	header {
 		padding-top: 0px;
-		margin-top: -60px;
+		margin-top: -30px;
 
 		// position: fixed !important;
 
