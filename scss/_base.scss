@@ -231,6 +231,34 @@ main .code a:active section p{
 
 }
 
+// resume section
+
+main .resume a:link section {
+background-color:rgba(34, 138, 255,.4);
+	border-color: rgba(30,30,30,1);
+
+}
+
+main .resume a:visited section{
+
+	background-color:rgba(34, 138, 255,.4);
+
+
+}
+
+main .resume a:hover section{
+
+	background-color: transparent;
+
+}
+
+main .resume a:active section{
+
+	background-color: rgba(165, 67, 255,1)
+
+
+}
+
 body {
 	background-color: rgba(36,36,36,1);
 }
@@ -375,6 +403,19 @@ h2 {
 
 .resume h2 {
 	color: rgba(34,138,255,1);
+}
+
+main div.resume2 {
+	margin-top: 0px;
+	text-align: center;
+}
+
+img.resume2 {
+	margin-top: 0px;
+	max-height: 100vh;
+	max-width: 100vw;
+	vertical-align: middle;
+
 }
 
 .contact h2 {
@@ -698,6 +739,10 @@ main {
 
 @media only screen and (max-width: 930px) {
 
+	main div.resume2 {
+	margin-top: 0px;
+}
+
 
 
 	.stick {
@@ -843,6 +888,11 @@ margin-top: 0px;
 
 //mobile
 @media only screen and (max-width: 580px) {
+
+
+main.resume2{
+	margin-top: 0px;
+}
 		.stick {
 		display: none;
 	}
