@@ -644,6 +644,7 @@ i {
 
  div {
 		margin-top: 50px;
+		padding-right: 100px;
 }
 
 div.single {
@@ -681,6 +682,7 @@ div.single {
 			padding: 5px;
 			margin-right: 0px;
 			font-size: 13px;
+			max-width: 100px;
 }
 
 
@@ -696,9 +698,9 @@ div.single {
 .description {
 	position: fixed;
 	border: none;
-	max-width: 330px;
-	left:748px;
-	padding-left: 50px;
+	max-width: 20vw;
+	left:67vw;
+	padding-left: 100px;
 	padding-right: 50px;
 
 						// line-height: 24px;
@@ -849,6 +851,10 @@ main {
 		padding-left: 0px;
 	}
 
+	div {
+		padding-right: 0px;
+	}
+
 
 main {
 	margin-top: 0px;
@@ -888,6 +894,8 @@ main {
 		text-align: center;
 		margin-left: 0px;
 		margin-right: 0px;
+		padding-left: 50px;
+		padding-right: 50px;
 
 		p{
 			font-size: 20px;
@@ -895,6 +903,10 @@ main {
 
 		}
 
+	}
+
+	section p {
+		max-width: 80vw;
 	}
 
 	.image {
@@ -1025,8 +1037,9 @@ display: inline;
 	.description {
 				padding:0px;
 				max-width: 95%;
-				margin-left:-5px;
+				margin-left:auto;
 				margin-right: auto;
+
 
 
 	}
