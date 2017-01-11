@@ -39,6 +39,11 @@
 }
 
 @font-face {
+	font-family:"luculent";
+	src: url(../fonts/luculent.ttf);
+}
+
+@font-face {
 	font-family:"luculent-bolditalic";
 	src: url(../fonts/luculentbi.ttf);
 }
@@ -290,11 +295,12 @@ a.anchor {display: block;
 header {
 	font-family: "luculent-bolditalic";
 	font-size: 36px;
-	word-spacing: -12px;
+	word-spacing: -10px;
 	float: left;
 	color: rgba(255,255,255,1);
-	margin-right: 50px;
 	padding-left: 40px;
+	min-width: 350px;
+
 
 }
 
@@ -307,7 +313,7 @@ nav {
 	margin-top: 33px;
 	max-width: 100%;
 	// padding-right: 0px;
-	padding-left: 20px;
+	padding-left: 70px;
 
 
 	ul {
@@ -317,6 +323,8 @@ nav {
     					margin-right: 62px;
     					font-size: 14px;
 
+
+
 						img {
 							height:12px;
 							width:12px;
@@ -325,6 +333,10 @@ nav {
 }		
 
 }
+}
+
+li.maincontact {
+	margin-right: 0px;
 }
 
 .stick {
@@ -647,7 +659,7 @@ div.single {
 
  section img {
 	vertical-align: middle;
-	max-width: 100%;
+	max-width: 80%;
 	margin-left: 0px;
 }
 
@@ -684,9 +696,10 @@ div.single {
 .description {
 	position: fixed;
 	border: none;
-	max-width: 350px;
-	left:800px;
-	padding: 20px;
+	max-width: 330px;
+	left:748px;
+	padding-left: 50px;
+	padding-right: 50px;
 
 						// line-height: 24px;
 			text-align: right;
@@ -719,6 +732,7 @@ header {
 
 
 	h1{
+		min-width: 300px;
 
 	}
 
@@ -821,6 +835,7 @@ main {
 
 	main section img {
 		margin-bottom: 0px;
+		text-align: center;
 	}
 
 
@@ -842,7 +857,13 @@ main {
 
 	section
 	{
-		align-items: center
+		align-items: center;
+		text-align: center;
+
+		img {
+			max-width: 100%
+		}
+
 	}
 
 
@@ -1028,7 +1049,7 @@ display: inline;
 			word-spacing: -10px;
 			font-size: 35px;
 			text-align: left;
-			width: 270px;
+			// width: 270px;
 
 
 	}
