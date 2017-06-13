@@ -21,6 +21,8 @@ $("#nav").hide();
 
 $("#plus").click(function(){
 $("#nav").slideToggle();
+$(this).toggleClass("xout");
+
 });
 
 
@@ -100,6 +102,8 @@ var granimInstance = new Granim({
 $('#projects').waypoint(function(direction) {
   if (direction === 'down') {
   	    			$("#sectionnav").fadeIn(1000);
+  	    			$("#sidetext").html("section one");
+
 
     			 $("#sectionnav").css("position","fixed");
 
