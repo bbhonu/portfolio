@@ -222,6 +222,7 @@ body {
     width: 100%;
     margin-left: 0px;
     z-index: 1000;
+    margin-top: -400px;
 
 }
 
@@ -383,17 +384,68 @@ p {
 // 	// margin: 0px 5px;
 // }
 // introduction
-.intro {
-    top: 95px;
-    height: 430px;
-    padding-top: 50px;
-    text-align: center;
-    // margin-top: 100px;
-    max-width: 72vw;
+
+#introright {
+bottom: 125px;
+    position: relative;
+    height: 300px;
+    right: 26px;
+    background-color: rgba(245, 245, 220, 0.6);
+    float: right;
+    width: 44vw;
+    margin: 0px 50px 0px 0px;
+    z-index: 3;
+
+    p {
+        padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    }
+
+
+}
+
+#skillz {
+        top: 213px;
+    position: relative;
+    margin-right: 3vw;
+    left: -500px;
+    z-index: 1;
+
+    p {
+       text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-size: 8px;
+
+}
+}
+
+#canvas-5 {
+    top: 218px;
+    position: relative;
+    height: 385px;
+    background-color: beige;
+    /* float: right; */
+    width: 44vw;
+    margin: 0vw 3vw 0vw 0vw;
+    z-index: 0;
+
+}
+#introleft {
+top: 95px;
+    height: 281px;
+    padding-top: 53px;
+    width: 50vw;
     background: url(../img/volcano-bg.jpg) no-repeat center center;
     background-size: cover;
-    margin: 0px auto 0px auto;
+    margin: 0vw 0vw 0vw 3vw;
     position: relative;
+    float: left;
+    z-index: 2;
+                                text-align: center;
+
+
+
 
     p {
         // color: rebeccapurple;
@@ -401,15 +453,21 @@ p {
         // line-height: 50px;
         color: rgba(36, 36, 36, 1);
         padding: 30px 80px;
+
         // text-align: justify;
     }
-    h4.a {
+    h4 {
         // 	    		   	color: rgba(165, 67, 255,1);
         // background-color: rgba(255,255,255,.5);
-        margin-top: 40px;
-        font-size: 45px;
-        line-height: 70px;
-        font-family: "bluunext";
+font-size: 59px;
+    /* font-style: italic; */
+    font-family: "bluunext";
+    text-align: center;
+    padding: 0px 10px;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 1px;
+
     }
 }
 
@@ -475,6 +533,7 @@ transform: rotate(-90deg) translate(260px,-350px);
 
 .project {
 	height: 700px;
+    opacity: .1;
 }
 
 #resume1 {
@@ -486,11 +545,17 @@ transform: rotate(-90deg) translate(260px,-350px);
 }
 
 #projectstext {
-width: 110px;
-text-align: center;}
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;}
 #resumetext {
-width: 110px;
-text-align: center;}
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;}
 
 .xout {
 	transform: rotate(45deg);
@@ -668,6 +733,7 @@ main div {
         letter-spacing: 5px;
         padding-top: 25px;
         padding-bottom: 10px;
+        color: rgba(0,0,0,.8);
         h1 {
             min-width: 300px;
         }
@@ -718,6 +784,8 @@ main div {
         }
         // margin-bottom: 50px;
     }
+
+
     main section {
         display: flex;
         flex-direction: column;
