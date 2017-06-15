@@ -173,8 +173,8 @@ $('#projects').waypoint(function(direction) {
 $('#resume').waypoint(function(direction) {
     if (direction === 'down') {
 
-        $("#resumenav").fadeIn();
-        $("#projectsnav").fadeOut();
+        $("#resumenav").show();
+        $("#projectsnav").hide();
         // $("#projectsnav").css("display", "none");
         $("#projectstext").css("display","none");
 
@@ -196,8 +196,8 @@ $('#resume').waypoint(function(direction) {
 
 $('#resume').waypoint(function(direction) {
     if (direction === 'up') {
-        $("#resumenav").fadeOut(1000);
-        $("#projectsnav").fadeIn(1000);
+        $("#resumenav").hide();
+        $("#projectsnav").show();
                 $("#projectstext").css("display","block");
 
 
@@ -207,6 +207,8 @@ $('#resume').waypoint(function(direction) {
 
     }
 
+},{
+  offset:'50%'
 });
 
 // var waypoint = new Waypoint({
