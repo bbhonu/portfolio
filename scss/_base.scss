@@ -58,8 +58,8 @@
 }
 
 @font-face {
-    font-family: "apercupro";
-    src: url(../fonts/apercu_regular_pro.otf);
+    font-family: "sportinggrotesque";
+    src: url(../fonts/sporting_grotesque_normal.otf);
 }
 
 @font-face {
@@ -213,7 +213,7 @@ body {
 }
 
 .top {
-	height: 540px;
+	height: 650px;
 }
 
 .head {
@@ -228,6 +228,8 @@ body {
 #plus {
 	color: black;
 	font-size: 36px;
+    cursor: pointer;
+    padding: 0px 10px;
 }
 
 a.anchor {
@@ -382,14 +384,16 @@ p {
 // }
 // introduction
 .intro {
-    height: 450px;
+    top: 95px;
+    height: 430px;
     padding-top: 50px;
     text-align: center;
     // margin-top: 100px;
-    max-width: 70vw;
+    max-width: 72vw;
     background: url(../img/volcano-bg.jpg) no-repeat center center;
     background-size: cover;
     margin: 0px auto 0px auto;
+    position: relative;
 
     p {
         // color: rebeccapurple;
@@ -441,10 +445,16 @@ display: block;
     padding: 0px 12px;
 }
 
-#sectionnav {
+#projectsnav {
 display: flex;
     align-items: center;
-transform: rotate(-90deg) translate(127px,-350px);
+transform: rotate(-90deg) translate(260px,-350px);
+}
+
+#resumenav {
+display: flex;
+    align-items: center;
+transform: rotate(-90deg) translate(260px,-350px);
 }
 
 #project1 {
@@ -467,11 +477,18 @@ transform: rotate(-90deg) translate(127px,-350px);
 	height: 700px;
 }
 
+#resume1 {
+    background-color: lightblue;
+}
+
 .fixme {
 	position: fixed;
 }
 
-#sidetext {
+#projectstext {
+width: 110px;
+text-align: center;}
+#resumetext {
 width: 110px;
 text-align: center;}
 
@@ -691,7 +708,6 @@ main div {
     .intro {
         width: 100%;
         p {
-            font-size: 32px;
             // line-height: 50px;
             padding-left: 20px;
             padding-right: 20px;
