@@ -10,20 +10,33 @@ $(document).ready(function() {
     $("#a").hide();
     $("#b").hide();
     $("#skillz").hide();
+    $("#handshake").hide();
 
-        $(".head").show().delay(3000).animate({marginTop:"0px"},2000);
+        $(".head").show().delay(4000).animate({marginTop:"0px"},2000);
 
         // $(".head").animate({opacity:"1"},2000);
 
+$("#handshake").delay(200).show();
+$("#handshake").delay(2800).animate({
+ marginTop:"-100px"},1200);
 
-$("#a").delay(1000).fadeIn(1000);
-$("#b").delay(1500).fadeIn(1000);
-$("#skillz").delay(2000).fadeIn().animate({left:"10px"},2000);
+$("#a").delay(500).fadeIn(2000);
+$("#b").delay(1500).fadeIn(2000);
+$("#skillz").delay(3500).fadeIn().animate({left:"10px"},2000);
 
     $("#introleft").fadeIn(1000);
+    $("#introleft").delay(2000).animate({
+      width:"50vw",
+      height:"30vw",
+      margin:"0px 0px 0px 3vw",
+      paddingTop:"53px",
+      top:"95px"},1000);
 
-    $("#introright").delay(2000).fadeIn(1000);
-    $("#canvas-5").delay(2000).fadeIn(1000);
+     $("h4").animate({color:"rgba(255,255,255,.4)"
+     });
+
+    $("#introright").delay(4000).fadeIn(1000);
+    $("#canvas-5").delay(4000).fadeIn(1000);
 
 
 
@@ -72,16 +85,15 @@ $("#skillz").delay(2000).fadeIn().animate({left:"10px"},2000);
 var granimInstance = new Granim({
     element: '#canvas-1',
     name: 'basic-gradient',
-    direction: 'left-right',
-    opacity: [1, 1],
+    direction: 'left-bottom',
+    opacity: [1, 1,1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients: [
-                ['#AA076B', '#61045F'],
-                ['#02AAB0', '#00CDAC'],
-                ['#DA22FF', '#9733EE']
-            ]
+            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
+                                ['#f3c7bc', '#dadff3','#e4a6d8'],
+],
+            transitionSpeed: "1000"
         }
     }
 });
@@ -90,15 +102,14 @@ var granimInstance2 = new Granim({
     element: '#canvas-2',
     name: 'basic-gradient',
     direction: 'left-right',
-    opacity: [1, 1],
+    opacity: [1, 1,1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients: [
-                ['#AA076B', '#61045F'],
-                ['#02AAB0', '#00CDAC'],
-                ['#DA22FF', '#9733EE']
-            ]
+            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
+                                ['#f3c7bc', '#dadff3','#e4a6d8'],
+],
+            transitionSpeed: "1000"
         }
     }
 });
@@ -107,15 +118,14 @@ var granimInstance3 = new Granim({
     element: '#canvas-3',
     name: 'basic-gradient',
     direction: 'left-right',
-    opacity: [1, 1],
+    opacity: [1, 1,1,1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients: [
-                ['#AA076B', '#61045F'],
-                ['#02AAB0', '#00CDAC'],
-                ['#DA22FF', '#9733EE']
-            ]
+            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
+                                ['#f3c7bc', '#dadff3','#e4a6d8'],
+],
+            transitionSpeed: "1000"
         }
     }
 });
@@ -123,18 +133,19 @@ var granimInstance4 = new Granim({
     element: '#canvas-4',
     name: 'basic-gradient',
     direction: 'left-right',
-    opacity: [1, 1],
+    opacity: [1, 1,1,1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients: [
-                ['#AA076B', '#61045F'],
-                ['#02AAB0', '#00CDAC'],
-                ['#DA22FF', '#9733EE']
-            ]
+            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
+                                ['#f3c7bc', '#dadff3','#e4a6d8'],
+],
+            transitionSpeed: "1000"
         }
     }
 });
+
+// orange/pinks
 
 var granimInstance5 = new Granim({
     element: '#canvas-5',
@@ -144,15 +155,75 @@ var granimInstance5 = new Granim({
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients: [
-                ['#e4a6d8', '#dadff3','#f3c7bc'],
-                ['#ffffff', '#e064c8',"#ff9d85"],
+            gradients: [               
+            ['#ffffff', '#dadff3','#f3c7bc'],
+                ['#ff9d85', '#eac8ff',"#ffffff"],                
+                ['#e4a6d8', '#ffffff','#f3c7bc'],
+
             ],
-            transitionSpeed: "1000"
+            transitionSpeed: "1500"
         }
     }
 });
 
+// silvery/cooltoned
+
+
+// var granimInstance5 = new Granim({
+//     element: '#canvas-5',
+//     name: 'basic-gradient',
+//     direction: 'left-right',
+//     opacity: [1, 1,1,1],
+//     isPausedWhenNotInView: true,
+//     states: {
+//         "default-state": {
+//             gradients: [
+//                 ['#897bf6', '#b8c2cc','#f6a4ed','#62a1fe'],
+//                 ['#f0cdec', '#b0a7f2',"#a2c6fb",'#d6e1ed']
+//             ],
+//             transitionSpeed: "2000"
+//         }
+//     }
+// });
+
+// cooltones2
+
+// var granimInstance5 = new Granim({
+//     element: '#canvas-5',
+//     name: 'basic-gradient',
+//     direction: 'diagonal',
+//     opacity: [1, 1,1],
+//     isPausedWhenNotInView: true,
+//     states: {
+//         "default-state": {
+//             gradients: [
+//                 ['#e0fff6', '#b6d3f5','#e5b1c8',],
+//                 ['#85b4ec', '#f8d6e5',"#81e8ca",]
+//             ],
+//             transitionSpeed: "2000"
+//         }
+//     }
+// });
+
+// hmmm idk
+
+// var granimInstance5 = new Granim({
+//     element: '#canvas-5',
+//     name: 'basic-gradient',
+//     direction: 'left-right',
+//     opacity: [1, 1,1,1],
+//     isPausedWhenNotInView: true,
+//     states: {
+//         "default-state": {
+//             gradients: [
+//                 ['#faddef', '#f3f3f3','#3d675d'],['#7f456b','#c6f4cd','#f3f3f3',],
+
+//                 ['#f3f3f3','#faffda',"#52b1b5"]
+//                             ],
+//             transitionSpeed: "2000"
+//         }
+//     }
+// });
 // $('#projects').waypoint(function(event, direction) {
 //     if (direction === 'down') {
 //          $("#sectionnav").css("position","fixed");
