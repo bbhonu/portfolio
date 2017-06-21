@@ -519,7 +519,7 @@ p {
 
 /* line 487, ../scss/_base.scss */
 .handshake {
-  font-size: 60px;
+  font-size: 7vw;
   position: relative;
   top: 30%;
 }
@@ -557,7 +557,7 @@ p {
 /* line 521, ../scss/_base.scss */
 .gradline {
   display: block;
-  width: 50vw;
+  width: 450px;
   height: 7px;
   padding: 0px 12px;
 }
@@ -566,14 +566,14 @@ p {
 #projectsnav {
   display: flex;
   align-items: center;
-  transform: rotate(-90deg) translate(260px, -588px);
+  transform: rotate(-90deg) translate(30%, -490px);
 }
 
 /* line 534, ../scss/_base.scss */
 #resumenav {
   display: flex;
   align-items: center;
-  transform: rotate(-90deg) translate(260px, -588px);
+  transform: rotate(-90deg) translate(30%, -490px);
 }
 
 /* line 540, ../scss/_base.scss */
@@ -981,12 +981,18 @@ main div main a:active {
     max-width: 100vw;
   }
 
-  /* line 923, ../scss/_base.scss */
+  /* line 925, ../scss/_base.scss */
+  .handshake {
+    top: 130px;
+    font-size: 10vw;
+  }
+
+  /* line 928, ../scss/_base.scss */
   h2 {
     font-family: "bluunext";
   }
 
-  /* line 926, ../scss/_base.scss */
+  /* line 931, ../scss/_base.scss */
   nav {
     float: none;
     width: 100%;
@@ -995,7 +1001,7 @@ main div main a:active {
     text-align: center;
   }
 
-  /* line 933, ../scss/_base.scss */
+  /* line 938, ../scss/_base.scss */
   nav ul li {
     display: inline;
     font-size: 28px;
@@ -1004,11 +1010,11 @@ main div main a:active {
     letter-spacing: -.6px;
     padding-left: 0px;
   }
-  /* line 940, ../scss/_base.scss */
+  /* line 945, ../scss/_base.scss */
   nav ul li a {
     font-size: 18px;
   }
-  /* line 943, ../scss/_base.scss */
+  /* line 948, ../scss/_base.scss */
   nav ul li img {
     height: 6px;
     width: 6px;
@@ -1016,33 +1022,68 @@ main div main a:active {
   }
 
   /* line 955, ../scss/_base.scss */
+  #introleft {
+    top: 0px;
+    float: none;
+    width: 100vw;
+  }
+
+  /* line 961, ../scss/_base.scss */
+  #canvas-5 {
+    width: 100vw;
+    float: none;
+    margin: 0px;
+    top: 90px;
+  }
+
+  /* line 968, ../scss/_base.scss */
+  #introright {
+    float: none;
+    width: 83vw;
+    bottom: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    right: 0px;
+  }
+  /* line 977, ../scss/_base.scss */
+  #introright p {
+    position: absolute;
+  }
+
+  /* line 983, ../scss/_base.scss */
+  #skillz {
+    top: 80px;
+  }
+
+  /* line 991, ../scss/_base.scss */
   .contact p {
     font-size: 20px;
   }
 
-  /* line 961, ../scss/_base.scss */
+  /* line 997, ../scss/_base.scss */
   .gallery i {
     margin-top: 42px;
     margin-left: 15px;
     padding-right: 10px;
     font-size: 42px;
   }
-  /* line 967, ../scss/_base.scss */
+  /* line 1003, ../scss/_base.scss */
   .gallery .container2 {
     padding-left: 0px;
   }
-  /* line 970, ../scss/_base.scss */
+  /* line 1006, ../scss/_base.scss */
   .gallery .description {
     padding: 0px;
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 990, ../scss/_base.scss */
+  /* line 1026, ../scss/_base.scss */
   .gallery .image {
     margin-top: -30px;
   }
-  /* line 993, ../scss/_base.scss */
+  /* line 1029, ../scss/_base.scss */
   .gallery .back {
     font-size: 40px;
   }

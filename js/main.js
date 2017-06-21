@@ -12,6 +12,9 @@ $(document).ready(function() {
     $("#skillz").hide();
     $("#handshake").hide();
 
+
+    if ($(window).width()> 580) {
+
         $(".head").show().delay(4000).animate({marginTop:"0px"},2000);
 
         // $(".head").animate({opacity:"1"},2000);
@@ -38,8 +41,54 @@ $("#skillz").delay(3500).fadeIn().animate({left:"10px"},2000);
     $("#introright").delay(4000).fadeIn(1000);
     $("#canvas-5").delay(4000).fadeIn(1000);
 
+}
+
+else {
+            $(".head").show().delay(4000).animate({marginTop:"0px"},2000);
+
+        // $(".head").animate({opacity:"1"},2000);
+
+$("#handshake").delay(200).show();
+$("#handshake").delay(2800).animate({
+ marginTop:"-100px"},1200);
+
+$("#a").delay(500).fadeIn(2000);
+$("#b").delay(1500).fadeIn(2000);
+$("#skillz").delay(3500).fadeIn().animate({left:"10px"},2000);
+
+    $("#introleft").fadeIn(1000);
+    $("#introleft").delay(2000).animate({
+      width:"100vw",
+      height:"60vw",
+      margin:"0px",
+      paddingTop:"53px",
+      top:"65px",
+      float:"none"},1000);
 
 
+
+     $("h4").animate({color:"rgba(255,255,255,.4)"
+     });
+
+    $("#introright").delay(4000).fadeIn(1000);
+    $("#introright").animate({
+    float: "none",
+    width: "83vw",
+    bottom: "250px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    float: "none",
+    right: "0px"
+    });
+
+    
+    $("#canvas-5").delay(4000).fadeIn(1000);
+    $("#canvas-5").animate({
+    width: "100vw",
+    float: "none",
+    margin:"0px",
+    top: "90px"    });
+}
 
     // var lastScrollTop = 0;
     // $(window).scroll(function(event){
