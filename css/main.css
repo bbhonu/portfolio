@@ -984,7 +984,7 @@ main div main a:active {
   /* line 925, ../scss/_base.scss */
   .handshake {
     top: 130px;
-    font-size: 10vw;
+    font-size: 9vw;
   }
 
   /* line 928, ../scss/_base.scss */
@@ -1025,7 +1025,7 @@ main div main a:active {
   #introleft {
     top: 0px;
     float: none;
-    width: 100vw;
+    width: 100%;
   }
 
   /* line 961, ../scss/_base.scss */

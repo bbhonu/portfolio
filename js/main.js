@@ -11,85 +11,11 @@ $(document).ready(function() {
     $("#b").hide();
     $("#skillz").hide();
     $("#handshake").hide();
+$(window).resize(function() {
+    windowResize();
+});
 
-
-    if ($(window).width()> 580) {
-
-        $(".head").show().delay(4000).animate({marginTop:"0px"},2000);
-
-        // $(".head").animate({opacity:"1"},2000);
-
-$("#handshake").delay(200).show();
-$("#handshake").delay(2800).animate({
- marginTop:"-100px"},1200);
-
-$("#a").delay(500).fadeIn(2000);
-$("#b").delay(1500).fadeIn(2000);
-$("#skillz").delay(3500).fadeIn().animate({left:"10px"},2000);
-
-    $("#introleft").fadeIn(1000);
-    $("#introleft").delay(2000).animate({
-      width:"50vw",
-      height:"30vw",
-      margin:"0px 0px 0px 3vw",
-      paddingTop:"53px",
-      top:"95px"},1000);
-
-     $("h4").animate({color:"rgba(255,255,255,.4)"
-     });
-
-    $("#introright").delay(4000).fadeIn(1000);
-    $("#canvas-5").delay(4000).fadeIn(1000);
-
-}
-
-else {
-            $(".head").show().delay(4000).animate({marginTop:"0px"},2000);
-
-        // $(".head").animate({opacity:"1"},2000);
-
-$("#handshake").delay(200).show();
-$("#handshake").delay(2800).animate({
- marginTop:"-100px"},1200);
-
-$("#a").delay(500).fadeIn(2000);
-$("#b").delay(1500).fadeIn(2000);
-$("#skillz").delay(3500).fadeIn().animate({left:"10px"},2000);
-
-    $("#introleft").fadeIn(1000);
-    $("#introleft").delay(2000).animate({
-      width:"100vw",
-      height:"60vw",
-      margin:"0px",
-      paddingTop:"53px",
-      top:"65px",
-      float:"none"},1000);
-
-
-
-     $("h4").animate({color:"rgba(255,255,255,.4)"
-     });
-
-    $("#introright").delay(4000).fadeIn(1000);
-    $("#introright").animate({
-    float: "none",
-    width: "83vw",
-    bottom: "250px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    float: "none",
-    right: "0px"
-    });
-
-    
-    $("#canvas-5").delay(4000).fadeIn(1000);
-    $("#canvas-5").animate({
-    width: "100vw",
-    float: "none",
-    margin:"0px",
-    top: "90px"    });
-}
-
+    openingDance();
     // var lastScrollTop = 0;
     // $(window).scroll(function(event){
     //    var st = $(this).scrollTop();
@@ -131,17 +57,183 @@ $("#skillz").delay(3500).fadeIn().animate({left:"10px"},2000);
 });
 
 
+
+
+
+function openingDance() {
+
+    // $("#introleft").off("fadeIn");
+
+
+
+    if ($(window).width() > 580) {
+
+        $(".head").show().delay(4000).animate({ marginTop: "0px" }, 2000);
+
+        // $(".head").animate({opacity:"1"},2000);
+
+        $("#handshake").delay(200).show();
+        $("#handshake").delay(2800).animate({
+            marginTop: "-100px",
+            fontSize: "7vw"
+        }, 1200);
+
+        $("#a").delay(500).fadeIn(2000);
+        $("#b").delay(1500).fadeIn(2000);
+        $("#skillz").delay(3500).fadeIn().animate({ left: "10px" }, 2000);
+        $("#introleft").fadeIn(1000);
+        $("#introleft").delay(2000).animate({
+            width: "50%",
+            height: "30vw",
+            margin: "0px 0px 0px 3vw",
+            paddingTop: "53px",
+            top: "95px"
+        }, 1000);
+
+        $("h4").animate({
+            color: "rgba(255,255,255,.4)"
+        });
+
+        $("#introright").delay(4000).fadeIn(1000);
+        $("#canvas-5").delay(4000).fadeIn(1000);
+
+    } else {
+
+
+        $(".head").show().delay(4000).animate({ marginTop: "0px" }, 2000);
+
+        // $(".head").animate({opacity:"1"},2000);
+
+        $("#handshake").delay(200).show();
+        $("#handshake").delay(2800).animate({
+            marginTop: "-100px",
+            fontSize: "9vw"
+        }, 1200);
+
+        $("#a").delay(500).fadeIn(2000);
+        $("#b").delay(1500).fadeIn(2000);
+        $("#skillz").delay(3500).fadeIn().animate({ left: "10px" }, 2000);
+
+        $("#introleft").fadeIn(1000);
+        $("#introleft").delay(2000).animate({
+            width: "100%",
+            height: "60vw",
+            margin: "0px",
+            paddingTop: "53px",
+            top: "65px",
+            float: "none"
+        }, 1000);
+
+
+
+        $("h4").animate({
+            color: "rgba(255,255,255,.4)"
+        });
+
+        $("#introright").delay(4000).fadeIn(1000);
+        // $("#introright").animate({
+        // float: "none",
+        // width: "83vw",
+        // bottom: "250px",
+        // marginLeft: "auto",
+        // marginRight: "auto",
+        // float: "none",
+        // right: "0px"
+        // });
+
+
+        $("#canvas-5").delay(4000).fadeIn(1000);
+        // $("#canvas-5").animate({
+        // width: "100vw",
+        // float: "none",
+        // margin:"0px",
+        // top: "90px"    });
+    }
+
+}
+
+function windowResize() {
+
+    // $("#introleft").off("fadeIn");
+    // $("#handshake").off("show");
+
+
+
+    if ($(window).width() > 580) {
+
+        // $(".head").animate({opacity:"1"},2000);
+
+
+        $("#introleft").animate({
+            width: "50%",
+            height: "30vw",
+            margin: "0px 0px 0px 3vw",
+            paddingTop: "53px",
+            top: "95px"
+        });
+
+        $("#handshake").animate({
+            fontSize: "7vw"
+        });
+
+    } else {
+        // $(".head").animate({opacity:"1"},2000);
+
+        $("#handshake").animate({
+            fontSize: "9vw"
+        });
+
+        // $("#a").delay(500).fadeIn(2000);
+        // $("#b").delay(1500).fadeIn(2000);
+
+        // $("#skillz").delay(3500).fadeIn().animate({ left: "10px" }, 2000);
+
+        // $("#introleft").fadeIn(1000);
+        $("#introleft").animate({
+            width: "100%",
+            height: "60vw",
+            margin: "0px",
+            paddingTop: "53px",
+            top: "65px",
+            float: "none"
+        },"");
+
+        // $("#introright").delay(4000).fadeIn(1000);
+        // $("#introright").animate({
+        // float: "none",
+        // width: "83vw",
+        // bottom: "250px",
+        // marginLeft: "auto",
+        // marginRight: "auto",
+        // float: "none",
+        // right: "0px"
+        // });
+
+
+        // $("#canvas-5").delay(4000).fadeIn(1000);
+        // $("#canvas-5").animate({
+        // width: "100vw",
+        // float: "none",
+        // margin:"0px",
+        // top: "90px"    });
+    }
+
+}
+
+
+
 var granimInstance = new Granim({
     element: '#canvas-1',
     name: 'basic-gradient',
     direction: 'left-bottom',
-    opacity: [1, 1,1],
+    opacity: [1, 1, 1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
-                                ['#f3c7bc', '#dadff3','#e4a6d8'],
-],
+            gradients: [
+                ['#e4a6d8', '#dadff3', '#f3c7bc'],
+                ['#f3c7bc', '#dadff3', '#e4a6d8'],
+            ],
             transitionSpeed: "1000"
         }
     }
@@ -151,13 +243,14 @@ var granimInstance2 = new Granim({
     element: '#canvas-2',
     name: 'basic-gradient',
     direction: 'left-right',
-    opacity: [1, 1,1],
+    opacity: [1, 1, 1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
-                                ['#f3c7bc', '#dadff3','#e4a6d8'],
-],
+            gradients: [
+                ['#e4a6d8', '#dadff3', '#f3c7bc'],
+                ['#f3c7bc', '#dadff3', '#e4a6d8'],
+            ],
             transitionSpeed: "1000"
         }
     }
@@ -167,13 +260,14 @@ var granimInstance3 = new Granim({
     element: '#canvas-3',
     name: 'basic-gradient',
     direction: 'left-right',
-    opacity: [1, 1,1,1],
+    opacity: [1, 1, 1, 1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
-                                ['#f3c7bc', '#dadff3','#e4a6d8'],
-],
+            gradients: [
+                ['#e4a6d8', '#dadff3', '#f3c7bc'],
+                ['#f3c7bc', '#dadff3', '#e4a6d8'],
+            ],
             transitionSpeed: "1000"
         }
     }
@@ -182,13 +276,14 @@ var granimInstance4 = new Granim({
     element: '#canvas-4',
     name: 'basic-gradient',
     direction: 'left-right',
-    opacity: [1, 1,1,1],
+    opacity: [1, 1, 1, 1],
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients:         [['#e4a6d8', '#dadff3','#f3c7bc'],
-                                ['#f3c7bc', '#dadff3','#e4a6d8'],
-],
+            gradients: [
+                ['#e4a6d8', '#dadff3', '#f3c7bc'],
+                ['#f3c7bc', '#dadff3', '#e4a6d8'],
+            ],
             transitionSpeed: "1000"
         }
     }
@@ -204,10 +299,10 @@ var granimInstance5 = new Granim({
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
-            gradients: [               
-            ['#ffffff', '#dadff3','#f3c7bc'],
-                ['#ff9d85', '#eac8ff',"#ffffff"],                
-                ['#e4a6d8', '#ffffff','#f3c7bc'],
+            gradients: [
+                ['#ffffff', '#dadff3', '#f3c7bc'],
+                ['#ff9d85', '#eac8ff', "#ffffff"],
+                ['#e4a6d8', '#ffffff', '#f3c7bc'],
 
             ],
             transitionSpeed: "1500"
@@ -296,7 +391,7 @@ $("#resumenav").css("position", "fixed");
 $('#projects').waypoint(function(direction) {
     if (direction === 'down') {
         $("#projectsnav").fadeIn(1000);
-        $("#projlink").css("color","white");
+        $("#projlink").css("color", "white");
         // $("#sidetext").html("section one");
 
 
@@ -310,7 +405,7 @@ $('#projects').waypoint(function(direction) {
 $('#projects').waypoint(function(direction) {
     if (direction === 'up') {
         $("#projectsnav").fadeOut();
-                $("#projlink").css("color","black");
+        $("#projlink").css("color", "black");
 
         // $("#sectionnav").css("transform","rotate(-90deg) translate(-31vw, -47vw)");
 
@@ -326,9 +421,9 @@ $('#resume').waypoint(function(direction) {
         $("#resumenav").show();
         $("#projectsnav").hide();
         // $("#projectsnav").css("display", "none");
-        $("#projectstext").css("display","none");
-                $("#projlink").css("color","black");
-        $("#resumelink").css("color","white");
+        $("#projectstext").css("display", "none");
+        $("#projlink").css("color", "black");
+        $("#resumelink").css("color", "white");
 
 
 
@@ -350,9 +445,9 @@ $('#resume').waypoint(function(direction) {
     if (direction === 'up') {
         $("#resumenav").hide();
         $("#projectsnav").show();
-                $("#projectstext").css("display","block");
-                        $("#projlink").css("color","white");
-                                $("#resumelink").css("color","black");
+        $("#projectstext").css("display", "block");
+        $("#projlink").css("color", "white");
+        $("#resumelink").css("color", "black");
 
 
 
@@ -363,8 +458,8 @@ $('#resume').waypoint(function(direction) {
 
     }
 
-},{
-  offset:'50%'
+}, {
+    offset: '50%'
 });
 
 
