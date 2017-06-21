@@ -266,16 +266,20 @@ h1{	margin-left: 3vw;
 nav {
     font-family: "bluunext";
     font-variant: italic;
-    font-size: 12px;
     max-width: 100%;
     background-color: grey;
     text-align: center;
     padding: 10px 0px;
 
     ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
         li {
             display: inline;
-            margin-right: 62px;
             font-size: 14px;
                 color:white;
 
@@ -390,10 +394,10 @@ p {
 // introduction
 
 #introright {
-bottom: 125px;
+bottom: 13vw;
     position: relative;
     height: 300px;
-    right: 26px;
+    right: 13px;
     background-color: rgba(245, 245, 220, 0.6);
     float: right;
     width: 44vw;
@@ -475,7 +479,7 @@ bottom: 125px;
     padding: 0px 10px;
     -webkit-text-stroke: black;
     -webkit-text-stroke-width: 1px;
-    color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1);
 
     }
 
@@ -788,6 +792,8 @@ main div {
         padding-bottom: 10px;
         padding-top: 10px;
         width: 100vw;
+
+
         a {
             font-size: 18px;
         }
@@ -935,10 +941,13 @@ main div {
         padding-left: 15px;
         text-align: center;
     }
-    nav ul li {
+    nav {
+        ul {
+    width: 80vw;
+    /* text-align: center; */
+        li {
         display: inline;
         font-size: 28px;
-        margin-right: 7px;
         word-spacing: -8px;
         letter-spacing: -.6px;
         padding-left: 0px;
@@ -951,6 +960,8 @@ main div {
             margin-right: 6px;
         }
     }
+    }
+}
 
 #introleft {
     top:0px;
