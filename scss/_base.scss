@@ -542,24 +542,42 @@ display: block;
 }
 
 #project1 {
-	background-color: red;
 
 }
 
 #project2 {
-	background-color: blue;
 	
 }
 
 
 #project3 {
-	background-color: purple;
 	
 }
 
 .project {
 	height: 700px;
-    opacity: 0;
+
+    a {
+        display: flex;
+            width: 88vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    }
+}
+
+#p1title {
+    font-family: 'grobe';
+    color: rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px black;
+    text-align: right;
+    float: right;
+    /* margin-right: 1vw; */
+    width: 181px;
+    font-size: 51px;
+    line-height: 50px;
+    padding-right: 27px;
+    margin-top: 1vw;
 }
 
 #resume1 {
