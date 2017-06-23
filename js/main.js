@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#b").hide();
     $("#skillz").hide();
     $("#handshake").hide();
+
 $(window).resize(function() {
     windowResize();
 });
@@ -52,7 +53,35 @@ $(window).resize(function() {
     // });
 
 
+$("html,body").mousedown(function(){
+    $(this).addClass("mousedown");
+    $(this).removeClass("mouseup");
 
+});
+
+$("html,body").mouseup(function(){
+    $(this).addClass("mouseup");
+
+});
+
+
+$("#project1").mouseenter(function(){
+
+    $("#proj1pic").animate({
+        width:"57vw"
+    });
+
+
+});
+
+$("#project1").mouseleave(function(){
+
+    $("#proj1pic").animate({
+        width:"55vw"
+    });
+
+
+});
 
 });
 
@@ -63,7 +92,6 @@ $(window).resize(function() {
 function openingDance() {
 
     // $("#introleft").off("fadeIn");
-
 
 
     if ($(window).width() > 580) {
@@ -196,7 +224,7 @@ function windowResize() {
             paddingTop: "53px",
             top: "65px",
             float: "none"
-        },"");
+        });
 
         // $("#introright").delay(4000).fadeIn(1000);
         // $("#introright").animate({

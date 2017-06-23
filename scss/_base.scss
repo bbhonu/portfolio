@@ -38,8 +38,8 @@
 }
 
 @font-face {
-    font-family: "luculent";
-    src: url(../fonts/luculent.ttf);
+    font-family: "grobe";
+    src: url(../fonts/grobe-deutschmeister.ttf);
 }
 
 @font-face {
@@ -215,7 +215,31 @@ main .resume a:active section {
 body {
 	font-family: "circular";
     // background-color: rgba(36,36,36,1);
+
 }
+
+// a {
+//             cursor: url('../img/black.png'), default !important;
+
+// }
+
+// a:active {
+//                 cursor: url('../img/pink.png'), default !important;
+
+
+// }
+
+// .mousedown {
+//             cursor: url('../img/pink.png'), default !important;
+
+
+// }
+
+// .mouseup {
+//         cursor: url('../img/black.png'), default !important;
+
+// }
+
 
 .top {
 	height: 650px;
@@ -234,7 +258,7 @@ body {
 #plus {
 	color: black;
 	font-size: 55px;
-    cursor: pointer;
+    // cursor: pointer;
     padding: 0px 10px;
 }
 
@@ -554,17 +578,42 @@ display: block;
 	
 }
 
+.projvisuals {
+        padding: 10vw 5vw;
+    background-color: aliceblue;
+
+    #proj1pic{
+        width: 54vw;
+    box-shadow: 5px 7px 23px 1px rgba(192, 0, 62, 0.66);
+    }
+
+}
+
 .project {
 	height: 700px;
 
     a {
-        display: flex;
-            width: 88vw;
+    display: flex;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    align-items: center;
+    // background-color: aliceblue;
+    padding: 0vw 2vw;
+
+
+    }
+
+    a:hover {
+        p{
+            color: black;
+        }
+
     }
 }
+
+
 
 #p1title {
     font-family: 'grobe';
@@ -573,11 +622,24 @@ display: block;
     text-align: right;
     float: right;
     /* margin-right: 1vw; */
-    width: 181px;
+    width: 178px;
     font-size: 51px;
     line-height: 50px;
     padding-right: 27px;
     margin-top: 1vw;
+}
+
+#p1info {
+        padding-left: 6vw;
+align-items: flex-end;
+        display: flex;
+    flex-direction: column;
+    p{    padding: 5vw 2vw;
+       text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-size: 8px;}
+
+
 }
 
 #resume1 {
