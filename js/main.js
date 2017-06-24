@@ -66,19 +66,38 @@ $("html,body").mouseup(function(){
 
 
 $("#project1").mouseenter(function(){
+    //                 $("#proj1vis").animate({
+    //     width:"55vw"
+    // });
 
     $("#proj1pic").animate({
         width:"55vw"
     });
+
+        $("#bar1").animate({
+        width:"55vw"
+    });
+
+
+
 
 
 });
 
 $("#project1").mouseleave(function(){
 
+    //                         $("#proj1vis").animate({
+    //     width:"50vw"
+    // });
+
     $("#proj1pic").animate({
         width:"50vw"
     });
+
+            $("#bar1").animate({
+        width:"50vw"
+    });
+
 
 
 });
