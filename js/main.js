@@ -68,7 +68,7 @@ $("html,body").mouseup(function(){
 $("#project1").mouseenter(function(){
 
     $("#proj1pic").animate({
-        width:"57vw"
+        width:"55vw"
     });
 
 
@@ -77,7 +77,25 @@ $("#project1").mouseenter(function(){
 $("#project1").mouseleave(function(){
 
     $("#proj1pic").animate({
+        width:"50vw"
+    });
+
+
+});
+
+$("#project2").mouseenter(function(){
+
+    $("#proj2pic").animate({
         width:"55vw"
+    });
+
+
+});
+
+$("#project2").mouseleave(function(){
+
+    $("#proj2pic").animate({
+        width:"50vw"
     });
 
 

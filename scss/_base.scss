@@ -43,8 +43,8 @@
 }
 
 @font-face {
-    font-family: "luculent-bolditalic";
-    src: url(../fonts/luculentbi.ttf);
+    font-family: "circular-bold";
+    src: url(../fonts/circular-bold.otf);
 }
 
 @font-face {
@@ -580,13 +580,31 @@ display: block;
 
 .projvisuals {
         padding: 10vw 5vw;
-    background-color: aliceblue;
+
+        img {
+                    width: 50vw;
+
+        }
 
     #proj1pic{
-        width: 54vw;
     box-shadow: 5px 7px 23px 1px rgba(192, 0, 62, 0.66);
     }
 
+    #proj2pic{
+    box-shadow: 5px 7px 23px 1px rgba(205, 220, 57, 0.58);
+
+    }
+
+}
+
+#proj1vis {
+        background-color: aliceblue;
+
+
+}
+
+#proj2vis {
+    background-color: rgba(232,211,237,.6);
 }
 
 .project {
@@ -594,13 +612,14 @@ display: block;
 
     a {
     display: flex;
-    width: 100vw;
+    width: 94vw;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     // background-color: aliceblue;
-    padding: 0vw 2vw;
+    // padding: 0vw 2vw;
+
 
 
     }
@@ -613,34 +632,59 @@ display: block;
     }
 }
 
+.pinfo{     
+        display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    p{    padding: 4vw 0vw;
+       text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-size: 8px;
+}
+
+
+
+
+.ptitle{
+       color: rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px black;
+         width: 178px;
+
+
+
+}
+
+}
 
 
 #p1title {
     font-family: 'grobe';
-    color: rgba(255, 255, 255, 1);
-    -webkit-text-stroke: 1px black;
     text-align: right;
     float: right;
     /* margin-right: 1vw; */
-    width: 178px;
     font-size: 51px;
     line-height: 50px;
+
+}
+
+#p2title {
+        color: white;
+    -webkit-text-stroke: 1px black;
     padding-right: 27px;
-    margin-top: 1vw;
+    font-size: 45px;
+    font-family: circular-bold;
+    padding-right: 3vw;
+
+    span {
+            -webkit-text-stroke: 0px;
+            font-size: 10px;
+            color:black;
+
+
+    }
 }
 
-#p1info {
-        padding-left: 6vw;
-align-items: flex-end;
-        display: flex;
-    flex-direction: column;
-    p{    padding: 5vw 2vw;
-       text-transform: uppercase;
-    letter-spacing: 1.6px;
-    font-size: 8px;}
-
-
-}
 
 #resume1 {
     background-color: lightblue;
