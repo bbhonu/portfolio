@@ -86,21 +86,44 @@
 // 	letter-spacing: 1px;
 // }
 // links
-a:link {
+
+a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: black;
+}
+header a:visited {
+    color: black;
+}
+
+header a:hover {
+    color: black;
+    opacity: .6;
+
+}
+
+header a:active {
+    color: black
+}
+nav a:link {
     text-decoration: none;
     color: rgba(36, 36, 36, 1);
 }
 
-a:visited {
+nav a:visited {
     color: rgba(36, 36, 36, 1);
+    opacity: .5;
+
 }
 
-a:hover {
+nav a:hover {
     text-decoration: none;
-    color: rgba(165, 67, 255, 1);
+    opacity: .5;
 }
 
-a:active {
+nav a:active {
     text-decoration: none;
     color: black;
 }
@@ -249,7 +272,7 @@ body {
 #plus {
 	color: black;
 	font-size: 55px;
-    // cursor: pointer;
+    cursor: pointer;
     padding: 0px 10px;
 }
 
@@ -282,7 +305,7 @@ nav {
     font-family: "bluunext";
     font-variant: italic;
     max-width: 100%;
-    background-color: grey;
+    background-color: rgba(229, 231, 246, 0.38);
     text-align: center;
     padding: 10px 0px;
 
@@ -413,7 +436,7 @@ bottom: 13vw;
     position: relative;
     height: 300px;
     right: 13px;
-    background-color: rgba(245, 245, 220, 0.6);
+    background-color: rgba(249, 243, 237, 0.49);
     float: right;
     width: 44vw;
     margin: 0px 50px 0px 0px;
@@ -596,12 +619,12 @@ display: block;
         }
 
     #proj1pic{
-                -webkit-filter: drop-shadow(12px 12px 14px #7584ef);
+                -webkit-filter: drop-shadow(3px 3px 15px #3b0c36);
 
     }
 
     #proj2pic{
-        -webkit-filter: drop-shadow(12px 12px 14px #b069ce);
+        -webkit-filter: drop-shadow(3px 3px 15px rgba(51, 58, 165,.6));
 
     }
 
@@ -615,18 +638,18 @@ display: block;
 }
 
 #proj2vis {
-    background-color: rgba(232,211,237,.6);
+    background-color: rgba(232,211,237,.32);
 }
 
 #proj3vis {
 
-    background-color: #e0ffe4;
+    background-color: rgba(176,226,192,.2);
         padding: 7vw 0vw;
 
     img{
 
         width: 27vw;
-        -webkit-filter: drop-shadow(12px 12px 14px #b2e64c);
+        -webkit-filter: drop-shadow(1px 1px 16px rgba(12,186,255,.6));
     }
 }
 
@@ -646,10 +669,14 @@ margin: 100px 0px;
 
     }
 
+
+
     a:hover {
         p{
             color: black;
         }
+
+
 
     }
 }

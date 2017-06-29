@@ -145,155 +145,182 @@ textarea {
   font-family: "circular";
   src: url(../fonts/circular-book.otf);
 }
-/* line 89, ../scss/_base.scss */
-a:link {
+/* line 90, ../scss/_base.scss */
+a {
   text-decoration: none;
-  color: #242424;
 }
 
 /* line 94, ../scss/_base.scss */
-a:visited {
+header a:link {
+  color: black;
+}
+
+/* line 97, ../scss/_base.scss */
+header a:visited {
+  color: black;
+}
+
+/* line 101, ../scss/_base.scss */
+header a:hover {
+  color: black;
+  opacity: .6;
+}
+
+/* line 107, ../scss/_base.scss */
+header a:active {
+  color: black;
+}
+
+/* line 110, ../scss/_base.scss */
+nav a:link {
+  text-decoration: none;
   color: #242424;
 }
 
-/* line 98, ../scss/_base.scss */
-a:hover {
-  text-decoration: none;
-  color: #a543ff;
+/* line 115, ../scss/_base.scss */
+nav a:visited {
+  color: #242424;
+  opacity: .5;
 }
 
-/* line 103, ../scss/_base.scss */
-a:active {
+/* line 121, ../scss/_base.scss */
+nav a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+/* line 126, ../scss/_base.scss */
+nav a:active {
   text-decoration: none;
   color: black;
 }
 
-/* line 108, ../scss/_base.scss */
+/* line 131, ../scss/_base.scss */
 main .design a:link section {
   background-color: rgba(255, 196, 255, 0.1);
   border-color: #1e1e1e;
 }
 
-/* line 113, ../scss/_base.scss */
+/* line 136, ../scss/_base.scss */
 main .design a:visited section {
   background-color: rgba(255, 196, 255, 0.1);
 }
 
-/* line 117, ../scss/_base.scss */
+/* line 140, ../scss/_base.scss */
 main .design a:hover section {
   background-color: transparent;
 }
 
-/* line 121, ../scss/_base.scss */
+/* line 144, ../scss/_base.scss */
 main .design a:active section {
   background-color: #a543ff;
 }
 
-/* line 125, ../scss/_base.scss */
+/* line 148, ../scss/_base.scss */
 main .design a:link section p {
   color: rgba(255, 196, 255, 0.7);
 }
 
-/* line 130, ../scss/_base.scss */
+/* line 153, ../scss/_base.scss */
 main .design a:visited section p {
   color: rgba(255, 196, 255, 0.7);
 }
 
-/* line 134, ../scss/_base.scss */
+/* line 157, ../scss/_base.scss */
 main .design a:hover section p {
   color: #a543ff;
   border-color: #a543ff;
 }
 
-/* line 139, ../scss/_base.scss */
+/* line 162, ../scss/_base.scss */
 main .design a:active section p {
   color: #a543ff;
 }
 
-/* line 144, ../scss/_base.scss */
+/* line 167, ../scss/_base.scss */
 main .code a:link section {
   background-color: rgba(143, 255, 161, 0.05);
   border-color: rgba(143, 255, 161, 0.7);
 }
 
-/* line 149, ../scss/_base.scss */
+/* line 172, ../scss/_base.scss */
 main .code a:visited section {
   background-color: rgba(143, 255, 161, 0.1);
 }
 
-/* line 153, ../scss/_base.scss */
+/* line 176, ../scss/_base.scss */
 main .code a:hover section {
   background-color: transparent;
 }
 
-/* line 158, ../scss/_base.scss */
+/* line 181, ../scss/_base.scss */
 main .code a:active section {
   background-color: #a543ff;
 }
 
-/* line 162, ../scss/_base.scss */
+/* line 185, ../scss/_base.scss */
 main .code a:link section p {
   color: rgba(143, 255, 161, 0.7);
   border-color: #8fffa1;
 }
-/* line 166, ../scss/_base.scss */
+/* line 189, ../scss/_base.scss */
 main .code a:link section p i {
   display: none;
 }
 
-/* line 171, ../scss/_base.scss */
+/* line 194, ../scss/_base.scss */
 main .code a:visited section p {
   color: rgba(143, 255, 161, 0.7);
   border-color: rgba(143, 255, 161, 0.7);
 }
 
-/* line 176, ../scss/_base.scss */
+/* line 199, ../scss/_base.scss */
 main .code a:hover section p {
   color: #a543ff;
   border-color: #a543ff;
 }
-/* line 179, ../scss/_base.scss */
+/* line 202, ../scss/_base.scss */
 main .code a:hover section p i {
   display: inline;
 }
 
-/* line 184, ../scss/_base.scss */
+/* line 207, ../scss/_base.scss */
 main .code a:active section p {
   color: #a543ff;
 }
 
-/* line 189, ../scss/_base.scss */
+/* line 212, ../scss/_base.scss */
 main .resume a:link section {
   background-color: rgba(34, 138, 255, 0.2);
   border-color: #1e1e1e;
 }
 
-/* line 194, ../scss/_base.scss */
+/* line 217, ../scss/_base.scss */
 main .resume a:visited section {
   background-color: rgba(34, 138, 255, 0.4);
 }
 
-/* line 198, ../scss/_base.scss */
+/* line 221, ../scss/_base.scss */
 main .resume a:hover section {
   background-color: transparent;
 }
 
-/* line 202, ../scss/_base.scss */
+/* line 225, ../scss/_base.scss */
 main .resume a:active section {
   background-color: #a543ff;
 }
 
-/* line 206, ../scss/_base.scss */
+/* line 229, ../scss/_base.scss */
 body {
   font-family: "circular";
 }
 
-/* line 235, ../scss/_base.scss */
+/* line 258, ../scss/_base.scss */
 .top {
   height: 650px;
 }
 
-/* line 239, ../scss/_base.scss */
+/* line 262, ../scss/_base.scss */
 .head {
   position: fixed;
   background-color: white;
@@ -303,14 +330,15 @@ body {
   margin-top: -400px;
 }
 
-/* line 249, ../scss/_base.scss */
+/* line 272, ../scss/_base.scss */
 #plus {
   color: black;
   font-size: 55px;
+  cursor: pointer;
   padding: 0px 10px;
 }
 
-/* line 256, ../scss/_base.scss */
+/* line 279, ../scss/_base.scss */
 a.anchor {
   display: block;
   position: relative;
@@ -318,7 +346,7 @@ a.anchor {
   visibility: hidden;
 }
 
-/* line 263, ../scss/_base.scss */
+/* line 286, ../scss/_base.scss */
 header {
   font-family: "bluunext";
   font-size: 24px;
@@ -332,21 +360,21 @@ header {
   height: 60px;
 }
 
-/* line 279, ../scss/_base.scss */
+/* line 302, ../scss/_base.scss */
 h1 {
   margin-left: 3vw;
 }
 
-/* line 281, ../scss/_base.scss */
+/* line 304, ../scss/_base.scss */
 nav {
   font-family: "bluunext";
   font-variant: italic;
   max-width: 100%;
-  background-color: grey;
+  background-color: rgba(229, 231, 246, 0.38);
   text-align: center;
   padding: 10px 0px;
 }
-/* line 289, ../scss/_base.scss */
+/* line 312, ../scss/_base.scss */
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -355,24 +383,24 @@ nav ul {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 296, ../scss/_base.scss */
+/* line 319, ../scss/_base.scss */
 nav ul li {
   display: inline;
   font-size: 14px;
   color: white;
 }
-/* line 301, ../scss/_base.scss */
+/* line 324, ../scss/_base.scss */
 nav ul li img {
   height: 12px;
   width: 12px;
 }
 
-/* line 309, ../scss/_base.scss */
+/* line 332, ../scss/_base.scss */
 li.maincontact {
   margin-right: 0px;
 }
 
-/* line 349, ../scss/_base.scss */
+/* line 372, ../scss/_base.scss */
 h2 {
   font-family: "bluunext";
   font-size: 26px;
@@ -381,33 +409,33 @@ h2 {
   padding-top: 10px;
 }
 
-/* line 357, ../scss/_base.scss */
+/* line 380, ../scss/_base.scss */
 .design section {
   background-color: rgba(255, 196, 255, 0.5);
 }
 
-/* line 361, ../scss/_base.scss */
+/* line 384, ../scss/_base.scss */
 .design h2 {
   color: #ffc4ff;
 }
 
-/* line 365, ../scss/_base.scss */
+/* line 388, ../scss/_base.scss */
 .code h2 {
   color: #8fffa1;
 }
 
-/* line 369, ../scss/_base.scss */
+/* line 392, ../scss/_base.scss */
 .resume h2 {
   color: #228aff;
 }
 
-/* line 373, ../scss/_base.scss */
+/* line 396, ../scss/_base.scss */
 main div.resume2 {
   margin-top: 0px;
   text-align: center;
 }
 
-/* line 378, ../scss/_base.scss */
+/* line 401, ../scss/_base.scss */
 img.resume2 {
   margin-top: 0px;
   max-height: 100vh;
@@ -415,47 +443,47 @@ img.resume2 {
   vertical-align: middle;
 }
 
-/* line 385, ../scss/_base.scss */
+/* line 408, ../scss/_base.scss */
 .contact h2 {
   color: yellow;
 }
 
-/* line 389, ../scss/_base.scss */
+/* line 412, ../scss/_base.scss */
 .contact {
   background-color: rgba(255, 255, 0, 0.1);
 }
 
-/* line 393, ../scss/_base.scss */
+/* line 416, ../scss/_base.scss */
 .contact:hover {
   background-color: white;
 }
 
-/* line 397, ../scss/_base.scss */
+/* line 420, ../scss/_base.scss */
 p {
   font-family: "circular";
   font-size: 10px;
 }
 
-/* line 411, ../scss/_base.scss */
+/* line 434, ../scss/_base.scss */
 #introright {
   bottom: 13vw;
   position: relative;
   height: 300px;
   right: 13px;
-  background-color: rgba(245, 245, 220, 0.6);
+  background-color: rgba(249, 243, 237, 0.49);
   float: right;
   width: 44vw;
   margin: 0px 50px 0px 0px;
   z-index: 3;
 }
-/* line 422, ../scss/_base.scss */
+/* line 445, ../scss/_base.scss */
 #introright p {
   padding: 10px;
   font-size: 12px;
   line-height: 20px;
 }
 
-/* line 431, ../scss/_base.scss */
+/* line 454, ../scss/_base.scss */
 #skillz {
   top: 213px;
   position: relative;
@@ -463,14 +491,14 @@ p {
   left: -500px;
   z-index: 1;
 }
-/* line 438, ../scss/_base.scss */
+/* line 461, ../scss/_base.scss */
 #skillz p {
   text-transform: uppercase;
   letter-spacing: 1.6px;
   font-size: 8px;
 }
 
-/* line 446, ../scss/_base.scss */
+/* line 469, ../scss/_base.scss */
 #canvas-5 {
   top: 218px;
   position: relative;
@@ -482,7 +510,7 @@ p {
   z-index: 0;
 }
 
-/* line 457, ../scss/_base.scss */
+/* line 480, ../scss/_base.scss */
 #introleft {
   top: 0px;
   height: 700px;
@@ -498,13 +526,13 @@ p {
   justify-content: center;
   text-align: center;
 }
-/* line 478, ../scss/_base.scss */
+/* line 501, ../scss/_base.scss */
 #introleft p {
   font-size: 20px;
   color: #242424;
   padding: 30px 80px;
 }
-/* line 487, ../scss/_base.scss */
+/* line 510, ../scss/_base.scss */
 #introleft h4 {
   /* font-style: italic; */
   font-family: "bluunext";
@@ -515,14 +543,14 @@ p {
   color: white;
 }
 
-/* line 506, ../scss/_base.scss */
+/* line 529, ../scss/_base.scss */
 .handshake {
   font-size: 7vw;
   position: relative;
   top: 30%;
 }
 
-/* line 515, ../scss/_base.scss */
+/* line 538, ../scss/_base.scss */
 #star {
   padding-top: 50px;
   margin-left: auto;
@@ -530,21 +558,21 @@ p {
   text-align: center;
   position: static;
 }
-/* line 521, ../scss/_base.scss */
+/* line 544, ../scss/_base.scss */
 #star img {
   width: 15vw;
   margin: 0px -12px;
 }
-/* line 525, ../scss/_base.scss */
+/* line 548, ../scss/_base.scss */
 #star #starleft {
   position: relative;
 }
-/* line 528, ../scss/_base.scss */
+/* line 551, ../scss/_base.scss */
 #star #starright {
   position: relative;
 }
 
-/* line 533, ../scss/_base.scss */
+/* line 556, ../scss/_base.scss */
 #linedown {
   height: 100px;
   width: 2px;
@@ -552,7 +580,7 @@ p {
   margin-right: auto;
 }
 
-/* line 540, ../scss/_base.scss */
+/* line 563, ../scss/_base.scss */
 .gradline {
   display: block;
   width: 450px;
@@ -560,7 +588,7 @@ p {
   padding: 0px 12px;
 }
 
-/* line 547, ../scss/_base.scss */
+/* line 570, ../scss/_base.scss */
 #projectsnav {
   display: flex;
   align-items: center;
@@ -568,14 +596,14 @@ p {
   z-index: 200;
 }
 
-/* line 554, ../scss/_base.scss */
+/* line 577, ../scss/_base.scss */
 #resumenav {
   display: flex;
   align-items: center;
   transform: rotate(-90deg) translate(30%, -500px);
 }
 
-/* line 577, ../scss/_base.scss */
+/* line 600, ../scss/_base.scss */
 .projvisuals {
   padding: 7vw 5vw;
   width: 50vw;
@@ -585,51 +613,51 @@ p {
   flex-direction: column;
   align-items: center;
 }
-/* line 586, ../scss/_base.scss */
+/* line 609, ../scss/_base.scss */
 .projvisuals .topbar {
   z-index: 21;
 }
-/* line 590, ../scss/_base.scss */
+/* line 613, ../scss/_base.scss */
 .projvisuals img {
   width: 50vw;
   text-align: center;
   z-index: 20;
 }
-/* line 598, ../scss/_base.scss */
+/* line 621, ../scss/_base.scss */
 .projvisuals #proj1pic {
-  -webkit-filter: drop-shadow(12px 12px 14px #7584ef);
+  -webkit-filter: drop-shadow(3px 3px 15px #3b0c36);
 }
-/* line 603, ../scss/_base.scss */
+/* line 626, ../scss/_base.scss */
 .projvisuals #proj2pic {
-  -webkit-filter: drop-shadow(12px 12px 14px #b069ce);
+  -webkit-filter: drop-shadow(3px 3px 15px rgba(51, 58, 165, 0.6));
 }
 
-/* line 610, ../scss/_base.scss */
+/* line 633, ../scss/_base.scss */
 #proj1vis {
   background-color: aliceblue;
 }
 
-/* line 617, ../scss/_base.scss */
+/* line 640, ../scss/_base.scss */
 #proj2vis {
-  background-color: rgba(232, 211, 237, 0.6);
+  background-color: rgba(232, 211, 237, 0.32);
 }
 
-/* line 621, ../scss/_base.scss */
+/* line 644, ../scss/_base.scss */
 #proj3vis {
-  background-color: #e0ffe4;
+  background-color: rgba(176, 226, 192, 0.2);
   padding: 7vw 0vw;
 }
-/* line 626, ../scss/_base.scss */
+/* line 649, ../scss/_base.scss */
 #proj3vis img {
   width: 27vw;
-  -webkit-filter: drop-shadow(12px 12px 14px #b2e64c);
+  -webkit-filter: drop-shadow(1px 1px 16px rgba(12, 186, 255, 0.6));
 }
 
-/* line 633, ../scss/_base.scss */
+/* line 656, ../scss/_base.scss */
 .project {
   margin: 100px 0px;
 }
-/* line 635, ../scss/_base.scss */
+/* line 658, ../scss/_base.scss */
 .project a {
   display: flex;
   width: 93vw;
@@ -638,36 +666,36 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-/* line 650, ../scss/_base.scss */
+/* line 675, ../scss/_base.scss */
 .project a:hover p {
   color: black;
 }
 
-/* line 657, ../scss/_base.scss */
+/* line 684, ../scss/_base.scss */
 .pinfo {
   display: flex;
   flex-direction: column;
   width: 30vw;
   align-items: center;
 }
-/* line 662, ../scss/_base.scss */
+/* line 689, ../scss/_base.scss */
 .pinfo p {
   padding: 4vw 0vw;
   text-transform: uppercase;
   letter-spacing: 1.6px;
   font-size: 8px;
 }
-/* line 668, ../scss/_base.scss */
+/* line 695, ../scss/_base.scss */
 .pinfo .strokeme {
   -webkit-text-stroke: 1px black;
 }
-/* line 676, ../scss/_base.scss */
+/* line 703, ../scss/_base.scss */
 .pinfo .ptitle {
   color: white;
   width: 178px;
 }
 
-/* line 687, ../scss/_base.scss */
+/* line 714, ../scss/_base.scss */
 #p1title {
   font-family: 'grobe';
   text-align: right;
@@ -677,7 +705,7 @@ p {
   line-height: 50px;
 }
 
-/* line 698, ../scss/_base.scss */
+/* line 725, ../scss/_base.scss */
 #p2title {
   color: white;
   padding-right: 27px;
@@ -685,35 +713,35 @@ p {
   font-family: circular-bold;
   padding-right: 3vw;
 }
-/* line 706, ../scss/_base.scss */
+/* line 733, ../scss/_base.scss */
 #p2title span {
   -webkit-text-stroke: 0px;
   font-size: 10px;
   color: black;
 }
 
-/* line 715, ../scss/_base.scss */
+/* line 742, ../scss/_base.scss */
 #p3title {
   font-family: "nowalt";
   font-size: 75px;
   letter-spacing: -1.6px;
 }
-/* line 719, ../scss/_base.scss */
+/* line 746, ../scss/_base.scss */
 #p3title img {
   width: 250px;
 }
 
-/* line 725, ../scss/_base.scss */
+/* line 752, ../scss/_base.scss */
 #resume1 {
   background-color: lightblue;
 }
 
-/* line 729, ../scss/_base.scss */
+/* line 756, ../scss/_base.scss */
 .fixme {
   position: fixed;
 }
 
-/* line 733, ../scss/_base.scss */
+/* line 760, ../scss/_base.scss */
 #projectstext {
   width: 110px;
   text-align: center;
@@ -722,7 +750,7 @@ p {
   letter-spacing: 2px;
 }
 
-/* line 739, ../scss/_base.scss */
+/* line 766, ../scss/_base.scss */
 #resumetext {
   width: 110px;
   text-align: center;
@@ -731,22 +759,22 @@ p {
   letter-spacing: 2px;
 }
 
-/* line 746, ../scss/_base.scss */
+/* line 773, ../scss/_base.scss */
 .xout {
   transform: rotate(45deg);
 }
 
-/* line 771, ../scss/_base.scss */
+/* line 798, ../scss/_base.scss */
 main {
   display: flex;
   flex-direction: column;
 }
-/* line 775, ../scss/_base.scss */
+/* line 802, ../scss/_base.scss */
 main div.design {
   padding-top: 120px;
 }
 
-/* line 780, ../scss/_base.scss */
+/* line 807, ../scss/_base.scss */
 main section {
   background-color: white;
   margin-bottom: 25px;
@@ -756,12 +784,12 @@ main section {
   align-items: center;
 }
 
-/* line 792, ../scss/_base.scss */
+/* line 819, ../scss/_base.scss */
 main div {
   margin-top: 100px;
 }
 
-/* line 796, ../scss/_base.scss */
+/* line 823, ../scss/_base.scss */
 main section img {
   margin-left: 35px;
   margin-top: 20px;
@@ -770,7 +798,7 @@ main section img {
   max-width: 80%;
 }
 
-/* line 804, ../scss/_base.scss */
+/* line 831, ../scss/_base.scss */
 main section p {
   display: inline;
   vertical-align: 50%;
@@ -783,13 +811,13 @@ main section p {
   color: #242424;
 }
 
-/* line 816, ../scss/_base.scss */
+/* line 843, ../scss/_base.scss */
 .little {
   font-size: 10px;
   text-align: center;
 }
 
-/* line 821, ../scss/_base.scss */
+/* line 848, ../scss/_base.scss */
 .contact {
   max-width: 100vw;
   margin-bottom: 40px;
@@ -797,28 +825,28 @@ main section p {
   padding-right: 10px;
   color: #242424;
 }
-/* line 824, ../scss/_base.scss */
+/* line 851, ../scss/_base.scss */
 .contact h2 {
   margin-bottom: 30px;
   padding-left: 0px;
 }
-/* line 828, ../scss/_base.scss */
+/* line 855, ../scss/_base.scss */
 .contact p {
   font-size: 25px;
 }
 
-/* line 841, ../scss/_base.scss */
+/* line 868, ../scss/_base.scss */
 .iphone {
   width: 20%;
   position: absolute;
 }
 
-/* line 846, ../scss/_base.scss */
+/* line 873, ../scss/_base.scss */
 .longscroll {
   width: 20%;
 }
 
-/* line 850, ../scss/_base.scss */
+/* line 877, ../scss/_base.scss */
 .scrollme {
   position: fixed;
   height: 300px;
@@ -826,43 +854,43 @@ main section p {
 }
 
 @media only screen and (max-width: 930px) {
-  /* line 858, ../scss/_base.scss */
+  /* line 885, ../scss/_base.scss */
   main div.resume2 {
     margin-top: 0px;
   }
 
-  /* line 861, ../scss/_base.scss */
+  /* line 888, ../scss/_base.scss */
   .stick {
     display: none;
   }
 
-  /* line 864, ../scss/_base.scss */
+  /* line 891, ../scss/_base.scss */
   main section img {
     margin-left: 0px;
   }
 
-  /* line 867, ../scss/_base.scss */
+  /* line 894, ../scss/_base.scss */
   .head {
     display: block;
   }
 
-  /* line 870, ../scss/_base.scss */
+  /* line 897, ../scss/_base.scss */
   nav {
     padding-left: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
     width: 100vw;
   }
-  /* line 878, ../scss/_base.scss */
+  /* line 905, ../scss/_base.scss */
   nav a {
     font-size: 18px;
   }
 
-  /* line 882, ../scss/_base.scss */
+  /* line 909, ../scss/_base.scss */
   .intro {
     width: 100%;
   }
-  /* line 884, ../scss/_base.scss */
+  /* line 911, ../scss/_base.scss */
   .intro p {
     padding-left: 20px;
     padding-right: 20px;
@@ -872,13 +900,13 @@ main section p {
     font-size: 25px;
   }
 
-  /* line 897, ../scss/_base.scss */
+  /* line 924, ../scss/_base.scss */
   main section {
     display: flex;
     flex-direction: column;
   }
 
-  /* line 901, ../scss/_base.scss */
+  /* line 928, ../scss/_base.scss */
   main section p {
     display: block;
     margin-top: 20px;
@@ -888,50 +916,50 @@ main section p {
     font-size: 20px;
   }
 
-  /* line 909, ../scss/_base.scss */
+  /* line 936, ../scss/_base.scss */
   main section a {
     text-align: center;
   }
 
-  /* line 912, ../scss/_base.scss */
+  /* line 939, ../scss/_base.scss */
   main section img {
     margin-bottom: 0px;
     text-align: center;
   }
 
-  /* line 918, ../scss/_base.scss */
+  /* line 945, ../scss/_base.scss */
   .gallery .container2 {
     padding-left: 0px;
   }
-  /* line 921, ../scss/_base.scss */
+  /* line 948, ../scss/_base.scss */
   .gallery div {
     padding-right: 0px;
   }
-  /* line 924, ../scss/_base.scss */
+  /* line 951, ../scss/_base.scss */
   .gallery main {
     margin-top: 0px;
   }
-  /* line 927, ../scss/_base.scss */
+  /* line 954, ../scss/_base.scss */
   .gallery section {
     align-items: center;
     text-align: center;
   }
-  /* line 930, ../scss/_base.scss */
+  /* line 957, ../scss/_base.scss */
   .gallery section img {
     max-width: 100%;
   }
-  /* line 934, ../scss/_base.scss */
+  /* line 961, ../scss/_base.scss */
   .gallery main {
     display: flex;
     flex-direction: column-reverse;
     vertical-align: 50%;
     margin-top: 0px;
   }
-  /* line 940, ../scss/_base.scss */
+  /* line 967, ../scss/_base.scss */
   .gallery h2 {
     padding-left: 0px;
   }
-  /* line 943, ../scss/_base.scss */
+  /* line 970, ../scss/_base.scss */
   .gallery .description {
     float: none;
     position: inherit;
@@ -942,16 +970,16 @@ main section p {
     padding-left: 50px;
     padding-right: 50px;
   }
-  /* line 952, ../scss/_base.scss */
+  /* line 979, ../scss/_base.scss */
   .gallery .description p {
     font-size: 20px;
     line-height: 30px;
   }
-  /* line 957, ../scss/_base.scss */
+  /* line 984, ../scss/_base.scss */
   .gallery section p {
     max-width: 80vw;
   }
-  /* line 960, ../scss/_base.scss */
+  /* line 987, ../scss/_base.scss */
   .gallery .image {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -959,103 +987,103 @@ main section p {
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 971, ../scss/_base.scss */
+  /* line 998, ../scss/_base.scss */
   #projectsnav {
     transform: rotate(-90deg) translate(30%, -513px);
   }
 
-  /* line 975, ../scss/_base.scss */
+  /* line 1002, ../scss/_base.scss */
   #resumenav {
     transform: rotate(-90deg) translate(30%, -513px);
   }
 
-  /* line 979, ../scss/_base.scss */
+  /* line 1006, ../scss/_base.scss */
   #introleft h4 {
     -webkit-text-stroke-width: .7px;
   }
 
-  /* line 985, ../scss/_base.scss */
+  /* line 1012, ../scss/_base.scss */
   #project1 a {
     flex-direction: column;
   }
-  /* line 988, ../scss/_base.scss */
+  /* line 1015, ../scss/_base.scss */
   #project1 a img {
     width: 70vw;
   }
 
-  /* line 993, ../scss/_base.scss */
+  /* line 1020, ../scss/_base.scss */
   #project2 a {
     flex-direction: column-reverse;
   }
-  /* line 995, ../scss/_base.scss */
+  /* line 1022, ../scss/_base.scss */
   #project2 a img {
     width: 70vw;
   }
 
-  /* line 1000, ../scss/_base.scss */
+  /* line 1027, ../scss/_base.scss */
   #project3 a {
     flex-direction: column;
   }
-  /* line 1002, ../scss/_base.scss */
+  /* line 1029, ../scss/_base.scss */
   #project3 a img {
     width: 50vw;
   }
 
-  /* line 1007, ../scss/_base.scss */
+  /* line 1034, ../scss/_base.scss */
   .projvisuals {
     padding: 7vw 0vw;
     width: 100vw;
     margin: 20px 0px 60px 0px;
   }
 
-  /* line 1013, ../scss/_base.scss */
+  /* line 1040, ../scss/_base.scss */
   #projects {
     z-index: 100;
     position: relative;
     top: 50px;
   }
 
-  /* line 1020, ../scss/_base.scss */
+  /* line 1047, ../scss/_base.scss */
   .project a {
     width: 100vw;
   }
 
-  /* line 1025, ../scss/_base.scss */
+  /* line 1052, ../scss/_base.scss */
   .project {
     margin: 50px 0px;
   }
-  /* line 1028, ../scss/_base.scss */
+  /* line 1055, ../scss/_base.scss */
   .project a {
     margin-left: 0vw;
     margin-right: 0vw;
   }
 
-  /* line 1035, ../scss/_base.scss */
+  /* line 1062, ../scss/_base.scss */
   #p1title {
     float: none;
     text-align: center;
     -webkit-text-stroke: 0.7px black;
   }
 
-  /* line 1042, ../scss/_base.scss */
+  /* line 1069, ../scss/_base.scss */
   .pinfo {
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
-  /* line 1048, ../scss/_base.scss */
+  /* line 1075, ../scss/_base.scss */
   .pinfo .ptitle {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1055, ../scss/_base.scss */
+  /* line 1082, ../scss/_base.scss */
   .pinfo p {
     padding: 25px 0px;
   }
 
-  /* line 1060, ../scss/_base.scss */
+  /* line 1087, ../scss/_base.scss */
   #p2title {
     font-size: 35px;
     padding-right: 0px;
@@ -1063,45 +1091,45 @@ main section p {
   }
 }
 @media only screen and (max-width: 580px) {
-  /* line 1082, ../scss/_base.scss */
+  /* line 1109, ../scss/_base.scss */
   #p2title {
     font-size: 28px;
     padding-right: 0px;
     -webkit-text-stroke: 0.5px black;
   }
 
-  /* line 1089, ../scss/_base.scss */
+  /* line 1116, ../scss/_base.scss */
   #introleft h4 {
     -webkit-text-stroke-width: .5px;
   }
 
-  /* line 1093, ../scss/_base.scss */
+  /* line 1120, ../scss/_base.scss */
   #projects {
     position: relative;
     top: 100px;
   }
 
-  /* line 1098, ../scss/_base.scss */
+  /* line 1125, ../scss/_base.scss */
   main.resume2 {
     margin-top: 0px;
   }
 
-  /* line 1101, ../scss/_base.scss */
+  /* line 1128, ../scss/_base.scss */
   .stick {
     display: none;
   }
 
-  /* line 1104, ../scss/_base.scss */
+  /* line 1131, ../scss/_base.scss */
   main {
     margin-top: 200px;
   }
 
-  /* line 1107, ../scss/_base.scss */
+  /* line 1134, ../scss/_base.scss */
   main section img {
     margin-left: 0px;
   }
 
-  /* line 1124, ../scss/_base.scss */
+  /* line 1151, ../scss/_base.scss */
   .intro p {
     font-size: 18px;
     margin-top: -10px;
@@ -1110,7 +1138,7 @@ main section p {
     padding: 20px 40px;
   }
 
-  /* line 1132, ../scss/_base.scss */
+  /* line 1159, ../scss/_base.scss */
   .intro {
     margin-top: 0px;
     padding-top: 123px;
@@ -1118,18 +1146,18 @@ main section p {
     max-width: 100vw;
   }
 
-  /* line 1140, ../scss/_base.scss */
+  /* line 1167, ../scss/_base.scss */
   .handshake {
     top: 130px;
     font-size: 9vw;
   }
 
-  /* line 1143, ../scss/_base.scss */
+  /* line 1170, ../scss/_base.scss */
   h2 {
     font-family: "bluunext";
   }
 
-  /* line 1146, ../scss/_base.scss */
+  /* line 1173, ../scss/_base.scss */
   nav {
     float: none;
     width: 100%;
@@ -1138,12 +1166,12 @@ main section p {
     text-align: center;
   }
 
-  /* line 1154, ../scss/_base.scss */
+  /* line 1181, ../scss/_base.scss */
   nav ul {
     width: 80vw;
     /* text-align: center; */
   }
-  /* line 1157, ../scss/_base.scss */
+  /* line 1184, ../scss/_base.scss */
   nav ul li {
     display: inline;
     font-size: 28px;
@@ -1151,25 +1179,25 @@ main section p {
     letter-spacing: -.6px;
     padding-left: 0px;
   }
-  /* line 1163, ../scss/_base.scss */
+  /* line 1190, ../scss/_base.scss */
   nav ul li a {
     font-size: 18px;
   }
-  /* line 1166, ../scss/_base.scss */
+  /* line 1193, ../scss/_base.scss */
   nav ul li img {
     height: 6px;
     width: 6px;
     margin-right: 6px;
   }
 
-  /* line 1175, ../scss/_base.scss */
+  /* line 1202, ../scss/_base.scss */
   #introleft {
     top: 0px;
     float: none;
     width: 100%;
   }
 
-  /* line 1181, ../scss/_base.scss */
+  /* line 1208, ../scss/_base.scss */
   #canvas-5 {
     width: 100vw;
     float: none;
@@ -1177,7 +1205,7 @@ main section p {
     top: 90px;
   }
 
-  /* line 1188, ../scss/_base.scss */
+  /* line 1215, ../scss/_base.scss */
   #introright {
     float: none;
     width: 83vw;
@@ -1187,44 +1215,44 @@ main section p {
     float: none;
     right: 0px;
   }
-  /* line 1197, ../scss/_base.scss */
+  /* line 1224, ../scss/_base.scss */
   #introright p {
     position: absolute;
   }
 
-  /* line 1203, ../scss/_base.scss */
+  /* line 1230, ../scss/_base.scss */
   #skillz {
     top: 80px;
   }
 
-  /* line 1211, ../scss/_base.scss */
+  /* line 1238, ../scss/_base.scss */
   .contact p {
     font-size: 20px;
   }
 
-  /* line 1217, ../scss/_base.scss */
+  /* line 1244, ../scss/_base.scss */
   .gallery i {
     margin-top: 42px;
     margin-left: 15px;
     padding-right: 10px;
     font-size: 42px;
   }
-  /* line 1223, ../scss/_base.scss */
+  /* line 1250, ../scss/_base.scss */
   .gallery .container2 {
     padding-left: 0px;
   }
-  /* line 1226, ../scss/_base.scss */
+  /* line 1253, ../scss/_base.scss */
   .gallery .description {
     padding: 0px;
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1246, ../scss/_base.scss */
+  /* line 1273, ../scss/_base.scss */
   .gallery .image {
     margin-top: -30px;
   }
-  /* line 1249, ../scss/_base.scss */
+  /* line 1276, ../scss/_base.scss */
   .gallery .back {
     font-size: 40px;
   }

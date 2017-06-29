@@ -521,7 +521,7 @@ $("#resumenav").css("position", "fixed");
 $('#projects').waypoint(function(direction) {
     if (direction === 'down') {
         $("#projectsnav").fadeIn(1000);
-        $("#projlink").css("color", "white");
+        $("#projlink").css("textDecoration", "underline");
         // $("#sidetext").html("section one");
 
 
@@ -535,7 +535,7 @@ $('#projects').waypoint(function(direction) {
 $('#projects').waypoint(function(direction) {
     if (direction === 'up') {
         $("#projectsnav").fadeOut();
-        $("#projlink").css("color", "black");
+        $("#projlink").css("textDecoration", "none");
 
         // $("#sectionnav").css("transform","rotate(-90deg) translate(-31vw, -47vw)");
 
@@ -553,7 +553,7 @@ $('#resume').waypoint(function(direction) {
         // $("#projectsnav").css("display", "none");
         $("#projectstext").css("display", "none");
         $("#projlink").css("color", "black");
-        $("#resumelink").css("color", "white");
+        $("#resumelink").css("textDecoration", "underline");
 
 
 
@@ -576,8 +576,8 @@ $('#resume').waypoint(function(direction) {
         $("#resumenav").hide();
         $("#projectsnav").show();
         $("#projectstext").css("display", "block");
-        $("#projlink").css("color", "white");
-        $("#resumelink").css("color", "black");
+        $("#projlink").css("textDecoration", "underline");
+        $("#resumelink").css("textDecoration", "none");
 
 
 
