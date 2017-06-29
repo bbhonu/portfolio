@@ -64,14 +64,14 @@ $("html,body").mouseup(function(){
 
 });
 
+ if ($(window).width() > 770) {
 
-$("#project1").mouseenter(function(){
-    //                 $("#proj1vis").animate({
-    //     width:"55vw"
-    // });
+    $("#project1").mouseenter(function(){
 
-    $("#proj1pic").animate({
-        width:"55vw"
+         $("#proj1pic").animate({
+        width:"55vw",
+
+
     });
 
         $("#bar1").animate({
@@ -80,18 +80,19 @@ $("#project1").mouseenter(function(){
 
 
 
+        $("#p1title").animate({
+            color: "#3f0c21",
+        },500);
+
+        $("#p1title").removeClass("strokeme");
+
+    });
+
+        $("#project1").mouseleave(function(){
+                $("#proj1pic").animate({
+        width:"50vw",
 
 
-});
-
-$("#project1").mouseleave(function(){
-
-    //                         $("#proj1vis").animate({
-    //     width:"50vw"
-    // });
-
-    $("#proj1pic").animate({
-        width:"50vw"
     });
 
             $("#bar1").animate({
@@ -99,26 +100,89 @@ $("#project1").mouseleave(function(){
     });
 
 
+        $("#p1title").animate({
+            color: "white",
+        });
 
-});
+        $("#p1title").addClass("strokeme");
 
-$("#project2").mouseenter(function(){
+    });
+
+        $("#project2").mouseenter(function(){
 
     $("#proj2pic").animate({
         width:"55vw"
     });
 
-
-});
-
-$("#project2").mouseleave(function(){
-
-    $("#proj2pic").animate({
-        width:"50vw"
+            $("#bar2").animate({
+        width:"55vw"
     });
 
 
+        $("#p2title").animate({
+            color: "#333aa5",
+        },500);
+
+        $("#p2title").removeClass("strokeme");
+
+    });
+
+        $("#project2").mouseleave(function(){
+                $("#proj2pic").animate({
+        width:"50vw"
+    });
+
+            $("#bar2").animate({
+        width:"50vw"
+    });
+
+        $("#p2title").animate({
+            color: "white",
+        });
+
+        $("#p2title").addClass("strokeme");
+
+    });
+
+
+
+$("#project3").mouseenter(function(){
+
+    $("#proj3pic").animate({
+        width:"30vw"
+    });
+
+
+        $("#p3title").animate({
+            color: "#0CBAFF",
+        },500);
+
+        $("#p3title").removeClass("strokeme");
+
+
+
+
 });
+
+$("#project3").mouseleave(function(){
+
+    $("#proj3pic").animate({
+        width:"27vw"
+    });
+
+            $("#p3title").animate({
+            color: "white",
+        });
+
+        $("#p3title").addClass("strokeme");
+
+
+
+});
+
+}
+
+
 
 });
 
@@ -129,6 +193,7 @@ $("#project2").mouseleave(function(){
 function openingDance() {
 
     // $("#introleft").off("fadeIn");
+
 
 
     if ($(window).width() > 580) {
