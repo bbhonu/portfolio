@@ -12,6 +12,16 @@ $(document).ready(function() {
     $("#skillz").hide();
     $("#handshake").hide();
 
+
+$(".extrainfo").mouseenter(function(){
+$(this).css("opacity",".9");
+});
+$(".extrainfo").mouseleave(function(){
+$(this).css("opacity","0");
+});
+
+
+
 $(window).resize(function() {
     windowResize();
 });
@@ -179,8 +189,8 @@ $("#project3").mouseleave(function(){
 
 
 });
-
 }
+
 
 
 
@@ -435,7 +445,7 @@ var granimInstance5 = new Granim({
                 ['#e4a6d8', '#ffffff', '#f3c7bc'],
 
             ],
-            transitionSpeed: "1500"
+            transitionSpeed: "1200"
         }
     }
 });
