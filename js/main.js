@@ -76,6 +76,21 @@ $("html,body").mouseup(function(){
 
  if ($(window).width() > 770) {
 
+
+$("#resumepic").mouseenter(function(){
+    $(this).animate({
+        width:"55vw",
+    });
+
+});
+
+$("#resumepic").mouseleave(function(){
+    $(this).animate({
+        width:"50vw",
+    });
+
+});
+
     $("#project1").mouseenter(function(){
 
          $("#proj1pic").animate({
@@ -450,6 +465,40 @@ var granimInstance5 = new Granim({
     }
 });
 
+var granimInstance6 = new Granim({
+    element: '#canvas-6',
+    name: 'basic-gradient',
+    direction: 'left-right',
+    opacity: [1, 1, 1, 1],
+    isPausedWhenNotInView: true,
+    states: {
+        "default-state": {
+            gradients: [
+                ['#e4a6d8', '#dadff3', '#f3c7bc'],
+                ['#f3c7bc', '#dadff3', '#e4a6d8'],
+            ],
+            transitionSpeed: "1000"
+        }
+    }
+});
+var granimInstance7 = new Granim({
+    element: '#canvas-7',
+    name: 'basic-gradient',
+    direction: 'left-right',
+    opacity: [1, 1, 1, 1],
+    isPausedWhenNotInView: true,
+    states: {
+        "default-state": {
+            gradients: [
+                ['#e4a6d8', '#dadff3', '#f3c7bc'],
+                ['#f3c7bc', '#dadff3', '#e4a6d8'],
+            ],
+            transitionSpeed: "1000"
+        }
+    }
+});
+
+
 // silvery/cooltoned
 
 
@@ -531,12 +580,6 @@ $("#resumenav").css("position", "fixed");
 $('#projects').waypoint(function(direction) {
     if (direction === 'down') {
         $("#projectsnav").fadeIn(1000);
-        $("#projlink").css("textDecoration", "underline");
-        // $("#sidetext").html("section one");
-
-
-
-        // $("#sectionnav").css("transform","rotate(-90deg) translate(0vw,-30vw)");
     }
 });
 
@@ -545,7 +588,6 @@ $('#projects').waypoint(function(direction) {
 $('#projects').waypoint(function(direction) {
     if (direction === 'up') {
         $("#projectsnav").fadeOut();
-        $("#projlink").css("textDecoration", "none");
 
         // $("#sectionnav").css("transform","rotate(-90deg) translate(-31vw, -47vw)");
 
@@ -563,7 +605,6 @@ $('#resume').waypoint(function(direction) {
         // $("#projectsnav").css("display", "none");
         $("#projectstext").css("display", "none");
         $("#projlink").css("color", "black");
-        $("#resumelink").css("textDecoration", "underline");
 
 
 
@@ -586,9 +627,6 @@ $('#resume').waypoint(function(direction) {
         $("#resumenav").hide();
         $("#projectsnav").show();
         $("#projectstext").css("display", "block");
-        $("#projlink").css("textDecoration", "underline");
-        $("#resumelink").css("textDecoration", "none");
-
 
 
 
@@ -601,6 +639,37 @@ $('#resume').waypoint(function(direction) {
 }, {
     offset: '50%'
 });
+
+$('#contact').waypoint(function(direction) {
+    if (direction === 'down') {
+        $("#resumenav").fadeOut(100);
+
+
+
+        // $("#sidetext").html("section one");
+        // $("#sectionnav").css("transform","rotate(-90deg) translate(-31vw, -47vw)");
+
+    }
+
+}, {
+    offset: '100%'
+});
+
+$('#contact').waypoint(function(direction) {
+    if (direction === 'up') {
+        $("#resumenav").fadeIn();
+
+
+
+        // $("#sidetext").html("section one");
+        // $("#sectionnav").css("transform","rotate(-90deg) translate(-31vw, -47vw)");
+
+    }
+
+}, {
+    offset: '100%'
+});
+
 
 
 // $(window).on("scroll",function(e){
