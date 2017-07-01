@@ -1216,8 +1216,39 @@ display: block;
     color: black;
     width: 300px;
     font-size: 32px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+        border-bottom: solid 2px #dedfe6;
 }
 
+#lax {
+    width: 100vw;
+    margin-top: 70px;
+}
+
+#laxpix {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#passionpic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+#lax2{
+    width: 50vw;
+    height: 100%
+}
+
+#lax3 {
+    width: 40vw;
+        height: 100%
+
+}
 
 .longscroll {
     width: 20%;
@@ -1517,6 +1548,19 @@ img {
 //mobile
 @media only screen and (max-width: 580px) {
 
+    #laxpix {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lax2 {
+        width: 90vw;
+    }
+
+      #lax3 {
+        width: 90vw;
+    }
+
     .toplf {
         flex-direction: column;
         text-align: center;
@@ -1588,6 +1632,7 @@ img {
         align-items: center;
         justify-content: center;
         margin-top: 40px;
+            align-items: baseline;
 
         h3 {
             text-align: left;
