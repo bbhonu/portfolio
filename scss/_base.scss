@@ -1045,6 +1045,53 @@ margin-top: 50px;
 width: 100vw;
 
 }
+#two{
+    border-bottom: none;
+    margin-top: 60px;
+
+display: block;
+    #left {
+        float: left;
+        margin-bottom: 50px;
+    }
+
+    #right{ float:right;}
+
+    div {
+        width: 60vw;
+        img{
+            width: 60vw;
+        }
+    }
+
+}
+
+.toplf {
+
+    width: 93vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+            border-bottom: solid 2px #dedfe6;
+            padding-bottom: 50px;
+
+    div {
+        width: 40vw;
+    img {
+
+        width: 40vw;
+        margin-top: -2px;
+        margin-bottom: 0px;
+        -webkit-filter: drop-shadow(3px 5px 3px #9dabb1);
+
+    }
+
+    p {
+        padding: 10px 0px;
+    }
+}
+}
 
 
 #mainimgs {
@@ -1144,13 +1191,33 @@ width: 100vw;
 
 
 }
-    
+   
+
+// love facilitator 
+
+#toppic {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px;
+
+    img {
+            width: 65vw;
+                                        -webkit-filter: drop-shadow(3px 5px 3px #9dabb1);
 
 
-.iphone {
-    width: 20%;
-    position: absolute;
+    }
+} 
+
+#about h2 {
+    font-family: "bluunext";
+    color: black;
+    width: 300px;
+    font-size: 32px;
 }
+
 
 .longscroll {
     width: 20%;
@@ -1161,6 +1228,7 @@ width: 100vw;
     height: 300px;
     overflow: hidden;
 }
+
 
 #resume {
     margin-top: 100px;
@@ -1448,6 +1516,47 @@ img {
 
 //mobile
 @media only screen and (max-width: 580px) {
+
+    .toplf {
+        flex-direction: column;
+        text-align: center;
+        div {
+
+            width: 80vw;
+            margin: 20px auto;
+
+            img {
+                width: 80vw;
+            }
+        }
+    }
+
+    #two {
+        text-align: center;
+        margin-top: 70px;
+
+
+        div {
+
+            width: 80vw;
+                   img {
+            width: 80vw;
+        }
+        }
+
+
+        #left {
+            float: none;
+            margin-bottom: 40px;
+
+        }
+
+        #right {
+            float: none;
+
+        }
+
+    }
 
     #lowerpics {
         flex-direction:column-reverse;
